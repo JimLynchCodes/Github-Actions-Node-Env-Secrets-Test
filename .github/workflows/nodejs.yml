@@ -24,9 +24,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-        FOO: ${{ matrix.FOO }}
+        FOO: ${{ secrets.FOO }}
       env: 
-        FOO: ${{ matrix.FOO }}
+        FOO: ${{ secrets.FOO }}
+        
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
