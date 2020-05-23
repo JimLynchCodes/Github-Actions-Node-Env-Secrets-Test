@@ -19,14 +19,17 @@ jobs:
         node-version: [13.x]
 
     steps:
+    - env: 
+        FOO: ${{ matrix.FOO }}
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-        FOO: ${{ matrix.FOO }}
     - run: npm ci
     - run: npm run build --if-present
+
+        FOO: ${{ matrix.FOO }}
     - run: npm test
 
 
