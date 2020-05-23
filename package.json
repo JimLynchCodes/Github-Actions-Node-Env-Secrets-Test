@@ -2,8 +2,10 @@
   "name": "github-actions-node-env-secrets-test",
   "version": "1.0.0",
   "description": "A test repo that demonstrates using github secrets to set the environment variables (node's process.env) when for a project when it is running on the  github actions server.",
-  "main": "node index.js",
+  "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "build": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
