@@ -1,0 +1,22 @@
+{
+  "name": "github-actions-node-env-secrets-test",
+  "version": "1.0.0",
+  "description": "A test repo that demonstrates using github secrets to set the environment variables (node's process.env) when for a project when it is running on the  github actions server.",
+  "main": "node index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JimLynchCodes/Github-Actions-Node-Env-Secrets-Test.git"
+  },
+  "author": "Jim",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/JimLynchCodes/Github-Actions-Node-Env-Secrets-Test/issues"
+  },
+  "homepage": "https://github.com/JimLynchCodes/Github-Actions-Node-Env-Secrets-Test#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
