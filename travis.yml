@@ -1,7 +1,6 @@
 language: node_js
 node_js:
-  - v12.14.1
-
+  - v13.13.0
 
 addons:
   apt:
@@ -21,14 +20,11 @@ before_script:
   - echo do pre-scripts things here...
 
 script:
-
-   - npm run build
-
+  - npm run build
 
 after_script:
   - echo ran script
 after_success:
-
   - echo "I guess we're done here!"
 
 matrix:
